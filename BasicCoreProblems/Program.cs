@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
-            Console.WriteLine("Select the Program\n1.Flip Coin\n2.LeapYear\n3.PowerOfTwo");
+            Console.WriteLine("Select the Program\n1.Flip Coin\n2.LeapYear\n3.PowerOfTwo\n4.HarmonicValue");
             Console.WriteLine("Choose option");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -21,6 +21,10 @@
                 case 3:                   
                     PowerOfTwo powerOfTwo = new PowerOfTwo();
                     powerOfTwo.PowerOf2();
+                    break;
+                case 4:
+                    HarmonicValue harmonicValue = new HarmonicValue();
+                    harmonicValue.checkHarmonicValue();
                     break;
             }
         }
