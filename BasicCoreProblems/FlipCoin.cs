@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BasicCoreProblems
 {
-    internal class UseCases
+    internal class FlipCoin
     {
-        public void FlipCoin()
+        public void FlipCoins()
         {
             int tail = 0, head = 0;
             Console.WriteLine("Enter number of times to flip");
