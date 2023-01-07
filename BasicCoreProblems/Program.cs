@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
-            Console.WriteLine("Select the Program\n1.Flip Coin\n2.LeapYear\n3.PowerOfTwo\n4.HarmonicValue\n5.Factors");
+            Console.WriteLine("Select the Program\n1.Flip Coin\n2.LeapYear\n3.PowerOfTwo\n4.HarmonicValue\n5.Factors\n6.QuotientRemainder");
             Console.WriteLine("Choose option");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -29,6 +29,10 @@
                 case 5:
                     Factors factors = new Factors();
                     factors.PrimeFactors();
+                    break;
+                case 6:
+                    QuotientRemainder quotientRemainder = new QuotientRemainder();
+                    quotientRemainder.findQuotientAndRemainder();
                     break;
             }
         }
