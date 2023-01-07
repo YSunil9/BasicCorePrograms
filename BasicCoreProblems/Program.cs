@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
-            Console.WriteLine("Select the Program\n1.Flip Coin\n2.LeapYear\n3.PowerOfTwo\n4.HarmonicValue\n5.Factors\n6.QuotientRemainder\n7.SwapNumber\n8.EvenOdd");
+            Console.WriteLine("Select the Program\n1.Flip Coin\n2.LeapYear\n3.PowerOfTwo\n4.HarmonicValue\n5.Factors\n6.QuotientRemainder\n7.SwapNumber\n8.EvenOdd\n9.Vowel&Consonant");
             Console.WriteLine("Choose option");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -41,6 +41,10 @@
                 case 8:
                    EvenOdd evenOdd = new EvenOdd();
                     evenOdd.CheckEvenOdd();
+                    break;
+                case 9:
+                    VowelConsonant vowelConsonant = new VowelConsonant();
+                    vowelConsonant.Vowel();
                     break;
             }
         }
